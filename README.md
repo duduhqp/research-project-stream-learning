@@ -50,8 +50,8 @@ Initial experiments were conducted using 7 datasets, with different concept drif
 	* Drift Properties:
 		* Abrupt
 		* Real
-	* 2 classes
-	* 10 features
+	* 15 classes
+	* 2 features
 * [Transient Chessboard](https://github.com/vlosing/driftDatasets/tree/master/artificial/chess) **[2]**
 	* 200000 instances
 	* Drift Properties:
@@ -61,19 +61,19 @@ Initial experiments were conducted using 7 datasets, with different concept drif
 	* 8 classes
 	* 2 features
 * [Moving Squares](https://github.com/vlosing/driftDatasets/tree/master/artificial/movingSquares) ([original source](http://users.rowan.edu/~polikar/research/nse/))
-	* 200000 instances
-	* Drift Properties:
-		* Abrupt
-		* Virtual
-	* 2 classes
-	* 10 features
+    * 200000 instances
+    * Drift Properties:
+        * Incremental
+        * Real
+    * 4 classes
+    * 2 features
 #### Real World
 * [Poker Hand](https://github.com/vlosing/driftDatasets/tree/master/realWorld/poker) ([original source](https://archive.ics.uci.edu/ml/datasets/Poker+Hand))
-	* 829201 instances
+	* 829201 instances (truncated in 200000 instances)
 	* Drift Properties:
 		* Virtual
 	* 10 classes
-	* 10 features
+	* 9 features
 
 #### All datasets used were retrieved from [Viktor Losing](https://github.com/vlosing)'s drift [datasets page](https://github.com/vlosing/driftDatasets).
 ### Evaluation
