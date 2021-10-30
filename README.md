@@ -43,7 +43,7 @@ Additionaly, changes may occur at a different pace and frequency over time, so t
 * The experiments were conduced using [scikit-multiflow](https://scikit-multiflow.github.io/), a Python Machine Learning on Data Streams framework.
 * matplotlib was used for plot visualization.
 ### Datasets used
-Initial experiments were conducted using 7 datasets, with different concept drift properties. 5 of are **artificial**, and 2 are **real-world** datasets:
+Initial experiments were conducted using 4 datasets, with different concept drift properties. 3 of are **artificial**, and 1 are **real-world** datasets:
 #### Artificial
 * [Interchanging RBF](https://github.com/vlosing/driftDatasets/tree/master/artificial/rbf) **[2]**
 	* 200000 instances
