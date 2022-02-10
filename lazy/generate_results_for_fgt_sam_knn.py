@@ -1,7 +1,7 @@
 import os
 import sys
 
-from data import FileStream
+from skmultiflow.data import FileStream
 from evaluation.fgt_evaluate_prequential import FGTEvaluatePrequential
 from lazy.fgt_sam_knn import FGTSAMKNN
 
@@ -57,7 +57,7 @@ def generate_different_k_values_sam_knn_models(starting_k_value):
 def evaluate(dataset_name, stream, starting_k_value=3):
     samknn_list = generate_different_k_values_sam_knn_models(starting_k_value)
     for i in range(len(samknn_list)):
-        file_name = 'results_k=' + str(samknn_list[i][0].n_neighbors) + '_ws=' + str(samknn_list[i][0].max_wind_size)
+        file_name = 'results_k=' + str(samknn_list[i][0].n_neighbors) + '_ws=' + str(samknn_list[i][0].window_size)
         evaluator = FGTEvaluatePrequential(max_samples=2000000,
                                            show_plot=False,
                                            pretrain_size=samknn_list[i][0].n_neighbors,

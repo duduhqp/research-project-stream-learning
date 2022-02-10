@@ -1,0 +1,19 @@
+aberto projeto no pycharm versão:
+    PyCharm 2021.2.3 (Community Edition)
+    Build #PC-212.5457.59, built on October 19, 2021
+    Runtime version: 11.0.12+7-b1504.40 amd64
+    VM: OpenJDK 64-Bit Server VM by JetBrains s.r.o.
+    Windows 10 10.0
+    GC: ParNew, ConcurrentMarkSweep
+    Memory: 982M
+    Cores: 4
+
+tive de criar um Virtual Environment (auto-gerado pelo PyCharm) e baixar as bibiotecas identificadas
+
+baixei também o River para o objetivo do projeto de troca de bibliotecas
+
+Primeiras obeservações: a documentação do projeto estava bem completa e detalhada para
+os passos iniciais. O único arquivo que não pude rodar foi o sam_knn.py, pela razão da minha
+participação no projeto, a troca das bibliotecas. Tenho de estudar o uso da biblioteca
+descontinuada no projeto e como devo substituí-la pelo equivalente do river sem prejudicar
+os resultados.

@@ -2,10 +2,12 @@ import random
 from abc import ABC
 
 import numpy as np
-from lazy.sam_knn import SAMKNNClassifier
+#from lazy.sam_knn import SAMKNNClassifier
+
+from river import neighbors
 
 
-class FGTSAMKNN(SAMKNNClassifier, ABC):
+class FGTSAMKNN(neighbors.SAMKNNClassifier, ABC):
     def __init__(self,
                  fgt=True,
                  fgt_n_instances=100,
@@ -18,11 +20,11 @@ class FGTSAMKNN(SAMKNNClassifier, ABC):
                  stm_size_option='maxACCApprox',
                  use_ltm=True):
         super().__init__(n_neighbors=n_neighbors,
-                         weighting=weighting,
-                         max_window_size=max_window_size,
+                         distance_weighting=weighting,
+                         window_size=max_window_size,
                          ltm_size=ltm_size,
                          min_stm_size=min_stm_size,
-                         stm_size_option=stm_size_option,
+                         stm_aprox_adaption=stm_size_option,
                          use_ltm=use_ltm)
 
         self.fgt = fgt

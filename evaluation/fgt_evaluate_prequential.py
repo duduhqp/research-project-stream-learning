@@ -451,6 +451,11 @@ class FGTEvaluatePrequential(StreamEvaluator):
             Model(s) predictions
 
         """
+        """
+        Fazer a adaptação de Numpy.ndarray para dict para poder utilizar o predict_one do River SAMKNN 
+        
+        """
+
         predictions = None
         if self.model is not None:
             predictions = []
